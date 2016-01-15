@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hvcker.doc">
+
+    <uses-permission android:name="android.permission.write_external_storage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".graphics_anim.DisplayBitmapEfficientlyTestAty" />
+        <activity android:name=".graphics_anim.DisplayGraphicsByOpenGLTestAty" />
+        <activity android:name=".graphics_anim.efficient.LoadLargeBitmapTestAty" />
+        <activity android:name=".graphics_anim.efficient.BitmapOffTheUITestAty" />
+        <activity android:name=".graphics_anim.efficient.offui.AsyncLoadBitmapTestAty" />
+        <activity android:name=".graphics_anim.efficient.offui.HandleConcurrencyTestAty" />
+        <activity android:name=".graphics_anim.efficient.CachingBitmapsTestAty" />
+        <activity android:name=".graphics_anim.efficient.cache.MemoryCacheTestAty" />
+        <activity android:name=".graphics_anim.efficient.cache.DiskCacheTestAty" />
+        <activity android:name=".graphics_anim.efficient.cache.HandleConfigurationChangeTestAty"/>
+    </application>
+
+</manifest>
